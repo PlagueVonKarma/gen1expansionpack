@@ -100,6 +100,21 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 	},
 	buu: {
 		tier: "New",
+	},//Hisui Pokemon proceeding
+	kleavor: {
+		tier: "New",
+	},
+	growlithehisui: {
+		tier: "LC",
+	},
+	arcaninehisui: {
+		tier: "New",
+	},
+	voltorbhisui: {
+		tier: "LC",
+	},
+	electrodehisui: {
+		tier: "New",
 	},
 
 // don't touch
