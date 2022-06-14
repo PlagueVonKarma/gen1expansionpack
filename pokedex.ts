@@ -280,7 +280,57 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = { //Scrapped Pokemon be
 		types: ["Ice"],
 		baseStats: {hp: 65, atk: 93, def: 57, spa: 85, spd: 85, spe: 95},
 		abilities: {},
-	}, //Cross-Gen evolutions proceeding
+	},//Hisui content proceeding
+	kleavor: {
+		num: 1186,
+		name: "Kleavor",
+		types: ["Bug", "Rock"],
+		baseStats: {hp: 70, atk: 135, def: 95, spa: 45, spd: 45, spe: 85},
+		abilities: {},
+		prevo: "Scyther",
+		evoType: "useItem",
+		evoItem: "Moon Stone",//Yeah yeah I know Black Augurite exists, implement it if you want...
+	},
+	growlithehisui: {
+		num: 1187,
+		name: "Growlithe-Hisui",
+		forme: "Hisui",
+		types: ["Fire", "Rock"],
+		baseStats: {hp: 60, atk: 75, def: 45, spa: 50, spd: 50, spe: 55},
+		abilities: {},
+		evos: ["Arcanine-Hisui"],
+	},
+	arcaninehisui: {
+		num: 1188,
+		name: "Arcanine-Hisui",
+		forme: "Hisui",
+		types: ["Fire", "Rock"],
+		baseStats: {hp: 95, atk: 115, def: 80, spa: 80, spd: 80, spe: 95},
+		abilities: {},
+		prevo: "Growlithe-Hisui",
+		evoType: "useItem",
+		evoItem: "Fire Stone",
+	},
+	voltorbhisui: {
+		num: 1187,
+		name: "Voltorb-Hisui",
+		forme: "Hisui",
+		types: ["Electric", "Grass"],
+		baseStats: {hp: 40, atk: 30, def: 55, spa: 55, spd: 55, spe: 100},
+		abilities: {},
+		evos: ["Electrode-Hisui"],
+	},
+	electrodehisui: {
+		num: 1187,
+		name: "Electrode-Hisui",
+		forme: "Hisui",
+		types: ["Electric", "Grass"],
+		baseStats: {hp: 60, atk: 50, def: 70, spa: 80, spd: 80, spe: 140},
+		abilities: {},
+		prevo: "Voltorb-Hisui",
+		evoType: "useItem",
+		evoItem: "Leaf Stone",
+	},
 
 // Classic Pokedex
 	missingno: {
@@ -809,6 +859,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = { //Scrapped Pokemon be
 	scyther: {
 		inherit: true,
 		baseStats: {hp: 70, atk: 110, def: 80, spa: 55, spd: 55, spe: 105},
+		evos: ["Scizor", "Kleavor"],
 	},
 	jynx: {
 		inherit: true,
