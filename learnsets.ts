@@ -108,6 +108,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			swift: ["1M"],
 			skullbash: ["1M"],
 			surf: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -137,6 +138,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			doubleedge: ["1M"],
 			megadrain: ["1M"],
 			swift: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -174,6 +176,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			reflect: ["1M"],
 			surf: ["1M"],
 			strength: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -203,6 +206,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			reflect: ["1M"],
 			swift: ["1M"],
 			flash: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -223,6 +227,23 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			furyswipes: ["1L39"],
 			psybeam: ["1L41"], //new
 			hydropump: ["1L55"],
+			bodyslam: ["1M"],
+			takedown: ["1M"],
+			doubleedge: ["1M"],
+			bubblebeam: ["1M"],
+			watergun: ["1M"],
+			icebeam: ["1M"],
+			blizzard: ["1M"],
+			payday: ["1M"],
+			submission: ["1M"],
+			counter: ["1M"],
+			seismictoss: ["1M"],
+			dig: ["1M"],
+			swift: ["1M"],
+			skullbash: ["1M"],
+			surf: ["1M"],
+			strength: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -266,6 +287,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			reflect: ["1M"],
 			metronome: ["1M"],
 			psywave: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -306,6 +328,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			reflect: ["1M"],
 			metronome: ["1M"],
 			psywave: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -334,6 +357,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			skullbash: ["1M"],
 			rockslide: ["1M"],
 			surf: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -367,6 +391,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			skullbash: ["1M"],
 			rockslide: ["1M"],
 			surf: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -399,6 +424,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			rockslide: ["1M"],
 			surf: ["1M"],
 			strength: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -472,6 +498,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			fissure: ["1M"],
 			dig: ["1M"],
 			skullbash: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -508,6 +535,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			hyperbeam: ["1M"],
 			fireblast: ["1M"],
 			strength: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -547,6 +575,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			triattack: ["1M"],
 			strength: ["1M"],
 			flash: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -592,6 +621,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			skullbash: ["1M"],
 			rockslide: ["1M"],
 			strength: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -628,6 +658,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			fissure: ["1M"],
 			skullbash: ["1M"],
 			surf: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -661,6 +692,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			reflect: ["1M"],
 			surf: ["1M"],
 			flash: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -699,6 +731,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			psywave: ["1M"],
 			surf: ["1M"],
 			flash: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -734,6 +767,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			psywave: ["1M"],
 			strength: ["1M"],
 			flash: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -774,6 +808,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			triattack: ["1M"],
 			fly: ["1M"],
 			flash: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -808,6 +843,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			blizzard: ["1M"],
 			skyattack: ["1M"],
 			surf: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -843,6 +879,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			skyattack: ["1M"],
 			surf: ["1M"],
 			hyperbeam: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -878,6 +915,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			selfdestruct: ["1M"],
 			swift: ["1M"],
 			triattack: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -906,6 +944,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			swift: ["1M"],
 			skullbash: ["1M"],
 			thunderwave: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -934,6 +973,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			swift: ["1M"],
 			skullbash: ["1M"],
 			thunderwave: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -962,6 +1002,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			swift: ["1M"],
 			skullbash: ["1M"],
 			thunderwave: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -1002,6 +1043,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			rockslide: ["1M"],
 			cut: ["1M"],
 			flash: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -1036,6 +1078,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			skullbash: ["1M"],
 			thunderbolt: ["1M"],
 			swift: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -1075,6 +1118,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			fireblast: ["1M"],
 			skullbash: ["1M"],
 			strength: ["1M"],
+			
 			toxic: ["1M"],
 			mimic: ["1M"],
 			doubleteam: ["1M"],
@@ -1116,6 +1160,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			reflect: ["1M"],
 			surf: ["1M"],
 			strength: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -1151,6 +1196,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 			skullbash: ["1M"],
 			psywave: ["1M"],
 			strength: ["1M"],
+			
 			toxic: ["1M"],
 			rage: ["1M"],
 			mimic: ["1M"],
@@ -1162,6 +1208,158 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = { //All LCs will hav
 		encounters: [
 			{generation: 1, level: 32}, //seafoam rare encounter
 		],
+	},
+	kleavor: {
+		learnset: {
+			quickattack: ["1L1"],
+			leer: ["1L17"],
+			focusenergy: ["1L20"],
+			rockthrow: ["1L27"],
+			slash: ["1L29"],
+			swordsdance: ["1L35", "1M"],
+			agility: ["1L42"],
+			wingattack: ["1L50"],
+			takedown: ["1M"],
+			doubleedge: ["1M"],
+			hyperbeam: ["1M"],
+			swift: ["1M"],
+			skullbash: ["1M"],
+			rockslide: ["1M"],
+			cut: ["1M"],
+			strength: ["1M"],
+			
+			toxic: ["1M"],
+			rage: ["1M"],
+			mimic: ["1M"],
+			doubleteam: ["1L24", "1M"],
+			bide: ["1M"],
+			rest: ["1M"],
+			substitute: ["1M"],
+		},
+	},
+	growlithehisui: {
+		learnset: {
+			bite: ["1L1"],
+			roar: ["1L1"],
+			ember: ["1L18"],
+			leer: ["1L23"],
+			takedown: ["1L30", "1M"],
+			rockslide: ["1L35", "1M"],
+			agility: ["1L39"],
+			flamethrower: ["1L50"],
+			bodyslam: ["1M"],
+			doubleedge: ["1M"],
+			dragonrage: ["1M"],
+			earthquake: ["1M"],
+			fissure: ["1M"],
+			dig: ["1M"],
+			reflect: ["1M"],
+			fireblast: ["1M"],
+			swift: ["1M"],
+			skullbash: ["1M"],
+			
+			toxic: ["1M"],
+			rage: ["1M"],
+			mimic: ["1M"],
+			doubleteam: ["1M"],
+			bide: ["1M"],
+			rest: ["1M"],
+			substitute: ["1M"],
+		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
+	},
+	arcaninehisui: {
+		learnset: {
+			bite: ["1L1"],
+			roar: ["1L1"],
+			ember: ["1L18"],
+			leer: ["1L23"],
+			takedown: ["1M"],
+			rockslide: ["1M"],
+			/*agility: ["1L39"], it should not need to learn these, but if the validator screams, uncomment
+			flamethrower: ["1L50"],*/ 
+			bodyslam: ["1M"],
+			doubleedge: ["1M"],
+			hyperbeam: ["1M"],
+			dragonrage: ["1M"],
+			earthquake: ["1M"],
+			fissure: ["1M"],
+			dig: ["1M"],
+			reflect: ["1M"],
+			fireblast: ["1M"],
+			swift: ["1M"],
+			skullbash: ["1M"],
+			
+			toxic: ["1M"],
+			rage: ["1M"],
+			mimic: ["1M"],
+			doubleteam: ["1M"],
+			bide: ["1M"],
+			rest: ["1M"],
+			substitute: ["1M"],
+		},
+	},
+	voltorbhisui: {
+		learnset: {
+			tackle: ["1L1"],
+			screech: ["1L1"],
+			sonicboom: ["1L17"],
+			selfdestruct: ["1L22", "1M"],
+			lightscreen: ["1L29"],
+			swift: ["1L36", "1M"],
+			explosion: ["1L43", "1M"],
+			takedown: ["1M"],
+			megadrain: ["1M"],
+			solarbeam: ["1M"],
+			thunderbolt: ["1M"],
+			thunder: ["1M"],
+			teleport: ["1M"],
+			reflect: ["1M"],
+			thunderwave: ["1M"],
+			flash: ["1M"],
+			
+			toxic: ["1M"],
+			rage: ["1M"],
+			mimic: ["1M"],
+			doubleteam: ["1M"],
+			bide: ["1M"],
+			rest: ["1M"],
+			substitute: ["1M"],
+		},
+		encounters: [
+			{generation: 1, level: 5},
+		],
+	},
+	electrodehisui: {
+		learnset: {
+			tackle: ["1L1"],
+			screech: ["1L1"],
+			sonicboom: ["1L17"],
+			selfdestruct: ["1M"],
+			//lightscreen: ["1L29"], uncomment if the validate screams
+			swift: ["1M"],
+			explosion: ["1M"],
+			takedown: ["1M"],
+			megadrain: ["1M"],
+			solarbeam: ["1M"],
+			thunderbolt: ["1M"],
+			thunder: ["1M"],
+			teleport: ["1M"],
+			reflect: ["1M"],
+			thunderwave: ["1M"],
+			flash: ["1M"],
+			hyperbeam: ["1M"],
+			
+			toxic: ["1M"],
+			rage: ["1M"],
+			mimic: ["1M"],
+			doubleteam: ["1M"],
+			bide: ["1M"],
+			rest: ["1M"],
+			substitute: ["1M"],
+		},
 	},
 	/*Follow this template, which includes all of RBY's mandatory TMs for easier importing.
 	MONSTERNAME: {
