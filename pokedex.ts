@@ -280,6 +280,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = { //Scrapped Pokemon be
 		types: ["Ice"],
 		baseStats: {hp: 65, atk: 93, def: 57, spa: 85, spd: 85, spe: 95},
 		abilities: {},
+	},
+	scizor: {
+		inherit: true,
+		baseStats: {hp: 70, atk: 130, def: 100, spa: 55, spd: 80, spe: 60},
 	},//Hisui content proceeding
 	kleavor: {
 		num: 1186,
