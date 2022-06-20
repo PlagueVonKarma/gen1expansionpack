@@ -170,6 +170,9 @@ export const Conditions: {[k: string]: ConditionData} = {
 	flinch: {
 		name: 'flinch',
 		duration: 1,
+		onStart(target) {
+			pokemon.removeVolatile('mustrecharge'); //This should let a recharger move if the flinch move goes second.
+		},
 		onBeforeMovePriority: 4,
 		onBeforeMove(pokemon) {
 			if (!this.runEvent('Flinch', pokemon)) {
