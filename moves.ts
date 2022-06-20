@@ -164,6 +164,11 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			},
 		},
 	},
+	bulletpunch: {
+		inherit: true,
+		category: "Physical",
+		type: "Steel",
+	},
 	clamp: {
 		inherit: true,
 		category: "Special",
