@@ -1,123 +1,485 @@
-export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and NFEs are given their respective designations, while new Pokemon are tiered "New" as if it were a new generation. 
-	puchikoon: { //Scrapped Pokemon start here.
+export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { 
+	///.d8888.  .o88b. d8888b.  .d8b.  d8888b. d8888b. d88888b d8888b.   d8888b.  .d88b.  db   dD d88888b .88b  d88.  .d88b.  d8b   db 
+	///88'  YP d8P  Y8 88  `8D d8' `8b 88  `8D 88  `8D 88'     88  `8D   88  `8D .8P  Y8. 88 ,8P' 88'     88'YbdP`88 .8P  Y8. 888o  88 
+	///`8bo.   8P      88oobY' 88ooo88 88oodD' 88oodD' 88ooooo 88   88   88oodD' 88    88 88,8P   88ooooo 88  88  88 88    88 88V8o 88 
+	///  `Y8b. 8b      88`8b   88~~~88 88~~~   88~~~   88~~~~~ 88   88   88~~~   88    88 88`8b   88~~~~~ 88  88  88 88    88 88 V8o88 
+	///db   8D Y8b  d8 88 `88. 88   88 88      88      88.     88  .8D   88      `8b  d8' 88 `88. 88.     88  88  88 `8b  d8' 88  V888 
+	///`8888Y'  `Y88P' 88   YD YP   YP 88      88      Y88888P Y8888D'   88       `Y88P'  YP   YD Y88888P YP  YP  YP  `Y88P'  VP   V8P 
+	//LCs and NFEs are given their respective designations
+	///New Pokemon are tiered "New" as if it were a new generation. This should be positioned below OU.
+	//Old Pokemon have been retiered
+	puchikoon: {
 		tier: "LC",
+		gen: 1,
 	},
 	mikon: {
 		tier: "LC",
+		gen: 1,
 	},
 	konya: {
 		tier: "LC",
+		gen: 1,
 	},
 	gyopin: {
 		tier: "LC",
+		gen: 1,
 	},
 	bittybat: {
 		tier: "LC",
+		gen: 1,
 	},
 	blastyke: {
 		tier: "LC",
+		gen: 1,
 	},
 	magnetite: {
 		tier: "NFE",
+		gen: 1,
 	},
-	zuduck: {
+	weirduck: {
 		tier: "NFE",
+		gen: 1,
 	},
 	ribbito: {
 		tier: "LC",
+		gen: 1,
 	},
-	croakazuna: {
+	croakozuna: {
 		tier: "New",
+		gen: 1,
 	},
-	weepamid: {
+	skimper: {
 		tier: "LC",
+		gen: 1,
 	},
 	bawligua: {
 		tier: "NFE",
+		gen: 1,
 	},
-	crythian: {
+	cryithan: {
 		tier: "New",
+		gen: 1,
 	},
 	nidoreign: {
 		tier: "New",
+		gen: 1,
 	},
 	decilla: {
 		tier: "LC",
+		gen: 1,
 	},
 	gyaoon: {
 		tier: "New",
+		gen: 1,
 	},
 	omega: {
 		tier: "New",
+		gen: 1,
 	},
 	trampel: {
 		tier: "New",
+		gen: 1,
 	},
 	jagg: {
 		tier: "New",
+		gen: 1,
 	},
 	blottle: {
 		tier: "LC",
+		gen: 1,
 	},
 	pendraken: {
 		tier: "New",
+		gen: 1,
 	},
 	deer: {
 		tier: "New",
+		gen: 1,
 	},
 	barunda: {
 		tier: "New",
+		gen: 1,
 	},
 	cheep: {
 		tier: "LC",
+		gen: 1,
 	},
 	jabetta: {
 		tier: "New",
+		gen: 1,
 	},
 	cactus: {
 		tier: "New",
+		gen: 1,
 	},
 	kotora: {
 		tier: "LC",
+		gen: 1,
 	},
 	gaotora: {
 		tier: "NFE",
+		gen: 1,
 	},
 	gorotora: {
 		tier: "New",
+		gen: 1,
 	},
 	crocky: {
 		tier: "New",
+		gen: 1,
 	},
 	gorochu: {
 		tier: "New",
+		gen: 1,
 	},
 	guardia: {
 		tier: "New",
+		gen: 1,
 	},
 	totartle: {
 		tier: "New",
+		gen: 1,
 	},
 	buu: {
 		tier: "New",
-	},//Hisui Pokemon proceeding
+		gen: 1,
+	},
+	purakkusu: { //1.1 SW97 additions begin here
+		tier: "New",
+		gen: 1,
+	},
+	madaamu: {
+		tier: "New",
+		gen: 1,
+	},
+	tsubomitto: {
+		tier: "New",
+		gen: 1,
+	},
+	animon: {
+		tier: "New",
+		gen: 1,
+	},
+	monja: {
+		tier: "LC",
+		gen: 1,
+	},
+	para: {
+		tier: "LC",
+		gen: 1,
+	},
+	hinaazu: {
+		tier: "LC",
+		gen: 1,
+	},
+	pudi: {
+		tier: "LC",
+		gen: 1,
+	},
+	betobebii: {
+		tier: "LC",
+		gen: 1,
+	},
+		/// 
+	/// .o88b. d8888b.  .d88b.  .d8888. .d8888.         d888b  d88888b d8b   db   d88888b db    db  .d88b.  .d8888. 
+	///d8P  Y8 88  `8D .8P  Y8. 88'  YP 88'  YP        88' Y8b 88'     888o  88   88'     88    88 .8P  Y8. 88'  YP 
+	///8P      88oobY' 88    88 `8bo.   `8bo.          88      88ooooo 88V8o 88   88ooooo Y8    8P 88    88 `8bo.   
+	///8b      88`8b   88    88   `Y8b.   `Y8b. C8888D 88  ooo 88~~~~~ 88 V8o88   88~~~~~ `8b  d8' 88    88   `Y8b. 
+	///Y8b  d8 88 `88. `8b  d8' db   8D db   8D        88. ~8~ 88.     88  V888   88.      `8bd8'  `8b  d8' db   8D 
+	/// `Y88P' 88   YD  `Y88P'  `8888Y' `8888Y'         Y888P  Y88888P VP   V8P   Y88888P    YP     `Y88P'  `8888Y' 
+	///
 	kleavor: {
 		tier: "New",
+		gen: 1,
+	},
+	scizor: {
+		tier: "New",
+		gen: 1,
+	},
+	crobat: {
+		tier: "New",
+		gen: 1,
+	},
+	steelix: {
+		tier: "New",
+		gen: 1,
+	},
+	bellossom: {
+		tier: "New",
+		gen: 1,
+	},
+	slowking: {
+		tier: "New",
+		gen: 1,
+	},
+	slowkinggalar: {
+		tier: "New",
+		gen: 1,
+	},
+	magnezone: {
+		tier: "New",
+		gen: 1,
+	},
+	lickilicky: {
+		tier: "Uber",
+		gen: 1,
+	},
+	tangrowth: {
+		tier: "New",
+		gen: 1,
+	},
+	blissey: {
+		tier: "Uber",
+		gen: 1,
+	},
+	rhyperior: {
+		tier: "New",
+		gen: 1,
+	},
+	hitmontop: {
+		tier: "New",
+		gen: 1,
+	},
+	politoed: {
+		tier: "New",
+		gen: 1,
+	},
+	mrrime: {
+		tier: "New",
+		gen: 1,
+	},
+	kingdra: {
+		tier: "New",
+		gen: 1,
+	},
+	magmortar: {
+		tier: "New",
+		gen: 1,
+	},
+	electivire: {
+		tier: "New",
+		gen: 1,
+	},
+	porygon2: {
+		tier: "Uber",
+		gen: 1, //I really don't think people want to fight this or Porygon-Z. Let's just launch with them banned.
+	},
+	porygonz: {
+		tier: "Uber",
+		gen: 1,
+	},
+	espeon: {
+		tier: "New",
+		gen: 1,
+	},
+	umbreon: {
+		tier: "New",
+		gen: 1,
+	},
+	leafeon: {
+		tier: "New",
+		gen: 1,
+	},
+	glaceon: {
+		tier: "New",
+		gen: 1,
+	},
+	sylveon: {
+		tier: "New",
+		gen: 1,
+	},
+	perrserker: {
+		tier: "New",
+		gen: 1,
+	},
+	sirfetchd: {
+		tier: "New",
+		gen: 1,
+	},
+	pichu: {
+		tier: "LC",
+		gen: 1,
+	},
+	tyrogue: {
+		tier: "LC",
+		gen: 1,
+	},
+	cleffa: {
+		tier: "LC",
+		gen: 1,
+	},
+	igglybuff: {
+		tier: "LC",
+		gen: 1,
+	},
+	magby: {
+		tier: "LC",
+		gen: 1,
+	},
+	smoochum: {
+		tier: "LC",
+		gen: 1,
+	},
+	elekid: {
+		tier: "LC",
+		gen: 1,
+	},
+	happiny: {
+		tier: "LC",
+		gen: 1,
+	},
+	munchlax: {
+		tier: "LC",
+		gen: 1,
+	},
+	mimejr: {
+		tier: "LC",
+		gen: 1,
+	},
+	///d8888b. d88888b  d888b  d888888b  .d88b.  d8b   db  .d8b.  db        db    db  .d8b.  d8888b. d888888b  .d8b.  d8b   db d888888b .d8888. 
+	///88  `8D 88'     88' Y8b   `88'   .8P  Y8. 888o  88 d8' `8b 88        88    88 d8' `8b 88  `8D   `88'   d8' `8b 888o  88 `~~88~~' 88'  YP 
+	///88oobY' 88ooooo 88         88    88    88 88V8o 88 88ooo88 88        Y8    8P 88ooo88 88oobY'    88    88ooo88 88V8o 88    88    `8bo.   
+	///88`8b   88~~~~~ 88  ooo    88    88    88 88 V8o88 88~~~88 88        `8b  d8' 88~~~88 88`8b      88    88~~~88 88 V8o88    88      `Y8b. 
+	///88 `88. 88.     88. ~8~   .88.   `8b  d8' 88  V888 88   88 88booo.    `8bd8'  88   88 88 `88.   .88.   88   88 88  V888    88    db   8D 
+	///88   YD Y88888P  Y888P  Y888888P  `Y88P'  VP   V8P YP   YP Y88888P      YP    YP   YP 88   YD Y888888P YP   YP VP   V8P    YP    `8888Y' 
+	rattataalola: {
+		tier: "LC",
+		gen: 1,
+	},
+	raticatealola: {
+		tier: "New",
+		gen: 1,
+	},
+	raichualola: {
+		tier: "New",
+		gen: 1,
+	},
+	sandshrewalola: {
+		tier: "LC",
+		gen: 1,
+	},
+	sandslashalola: { //fweezai
+		tier: "New",
+		gen: 1,
+	},
+	vulpixalola: {
+		tier: "LC",
+		gen: 1,
+	},
+	ninetalesalola: {
+		tier: "New",
+		gen: 1,
+	},
+	diglettalola: {
+		tier: "LC",
+		gen: 1,
+	},
+	dugtrioalola: {
+		tier: "New",
+		gen: 1,
+	},
+	meowthalola: {
+		tier: "LC",
+		gen: 1,
+	},
+	meowthgalar: {
+		tier: "LC",
+		gen: 1,
+	},
+	persianalola: {
+		tier: "New",
+		gen: 1,
 	},
 	growlithehisui: {
 		tier: "LC",
+		gen: 1,
 	},
 	arcaninehisui: {
 		tier: "New",
+		gen: 1,
+	},
+	geodudealola: {
+		tier: "LC",
+		gen: 1,
+	},
+	graveleralola: {
+		tier: "NFE",
+		gen: 1,
+	},
+	golemalola: {
+		tier: "New",
+		gen: 1,
+	},
+	ponytagalar: {
+		tier: "LC",
+		gen: 1,
+	},
+	rapidashgalar: {
+		tier: "New",
+		gen: 1,
+	},
+	slowpokegalar: {
+		tier: "LC",
+		gen: 1,
+	},
+	slowbrogalar: {
+		tier: "New",
+		gen: 1,
+	},
+	farfetchdgalar: {
+		tier: "LC",
+		gen: 1,
+	},
+	grimeralola: {
+		tier: "LC",
+		gen: 1,
+	},
+	mukalola: {
+		tier: "New",
+		gen: 1,
 	},
 	voltorbhisui: {
 		tier: "LC",
+		gen: 1,
 	},
 	electrodehisui: {
 		tier: "New",
+		gen: 1,
 	},
-
-// don't touch
+	exeggutoralola: {
+		tier: "New",
+		gen: 1,
+	},
+	marowakalola: {
+		tier: "New",
+		gen: 1,
+	},
+	weezinggalar: {
+		tier: "New",
+		gen: 1,
+	},
+	mrmimegalar: {
+		tier: "NFE",
+		gen: 1,
+	},
+	articunogalar: {
+		tier: "New",
+		gen: 1,
+	},
+	zapdosgalar: {
+		tier: "New",
+		gen: 1,
+	},
+	moltresgalar: {
+		tier: "New",
+		gen: 1,
+	},
+	/// .o88b. db       .d8b.  .d8888. .d8888. d888888b  .o88b.   d8888b.  .d88b.  db   dD d88888b d8888b. d88888b db    db 
+	///d8P  Y8 88      d8' `8b 88'  YP 88'  YP   `88'   d8P  Y8   88  `8D .8P  Y8. 88 ,8P' 88'     88  `8D 88'     `8b  d8' 
+	///8P      88      88ooo88 `8bo.   `8bo.      88    8P        88oodD' 88    88 88,8P   88ooooo 88   88 88ooooo  `8bd8'  
+	///8b      88      88~~~88   `Y8b.   `Y8b.    88    8b        88~~~   88    88 88`8b   88~~~~~ 88   88 88~~~~~  .dPYb.  
+	///Y8b  d8 88booo. 88   88 db   8D db   8D   .88.   Y8b  d8   88      `8b  d8' 88 `88. 88.     88  .8D 88.     .8P  Y8. 
+	/// `Y88P' Y88888P YP   YP `8888Y' `8888Y' Y888888P  `Y88P'   88       `Y88P'  YP   YD Y88888P Y8888D' Y88888P YP    YP 
 	bulbasaur: {
 		randomBattleMoves: ["bodyslam", "sleeppowder"],
 		essentialMove: "razorleaf",
@@ -245,13 +607,13 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 		randomBattleMoves: ["surf", "thunderwave"],
 		essentialMove: "thunderbolt",
 		exclusiveMoves: ["agility", "bodyslam", "seismictoss", "thunder"],
-		tier: "LC",
+		tier: "NFE", //pichu exists now
 	},
 	raichu: {
 		randomBattleMoves: ["surf", "thunderwave"],
 		essentialMove: "thunderbolt",
 		exclusiveMoves: ["agility", "bodyslam", "hyperbeam", "seismictoss", "thunder"],
-		tier: "NUBL",
+		tier: "NFE", //hahaha holy shit
 	},
 	sandshrew: {
 		randomBattleMoves: ["bodyslam", "rockslide", "swordsdance"],
@@ -298,7 +660,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 		randomBattleMoves: ["bodyslam", "thunderbolt", "thunderwave"],
 		essentialMove: "blizzard",
 		exclusiveMoves: ["counter", "psychic", "seismictoss", "sing", "sing"],
-		tier: "NFE",
+		tier: "NFE", //cleffa
 	},
 	clefable: {
 		randomBattleMoves: ["bodyslam", "thunderbolt", "thunderwave"],
@@ -319,7 +681,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 	jigglypuff: {
 		randomBattleMoves: ["blizzard", "bodyslam", "seismictoss", "thunderwave"],
 		exclusiveMoves: ["counter", "sing"],
-		tier: "LC",
+		tier: "NFE", //igglybuff
 	},
 	wigglytuff: {
 		randomBattleMoves: ["blizzard", "bodyslam", "thunderwave"],
@@ -328,7 +690,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 	},
 	zubat: {
 		randomBattleMoves: ["confuseray", "doubleedge", "megadrain", "toxic"],
-		tier: "LC",
+		tier: "NFE", //bittybat
 	},
 	golbat: {
 		randomBattleMoves: ["confuseray", "doubleedge", "hyperbeam", "megadrain"],
@@ -543,7 +905,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 	magneton: {
 		randomBattleMoves: ["thunder", "thunderbolt", "thunderwave"],
 		exclusiveMoves: ["doubleedge", "hyperbeam", "hyperbeam", "mimic", "substitute", "toxic"],
-		tier: "PU",
+		tier: "NFE", //magnezone
 	},
 	farfetchd: {
 		randomBattleMoves: ["agility", "bodyslam", "swordsdance"],
@@ -656,7 +1018,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 	},
 	marowak: {
 		randomBattleMoves: ["blizzard", "bodyslam", "earthquake", "seismictoss"],
-		tier: "PU",
+		tier: "NFE",
 	},
 	hitmonlee: {
 		randomBattleMoves: ["bodyslam", "highjumpkick", "seismictoss"],
@@ -672,7 +1034,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 		randomBattleMoves: ["hyperbeam", "swordsdance"],
 		essentialMove: "bodyslam",
 		exclusiveMoves: ["blizzard", "earthquake", "earthquake", "earthquake"],
-		tier: "PU",
+		tier: "LC", //lickilicky exists now, should be interesting
 	},
 	koffing: {
 		randomBattleMoves: ["explosion", "fireblast", "sludge", "thunderbolt"],
@@ -689,19 +1051,19 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 	rhydon: {
 		randomBattleMoves: ["bodyslam", "earthquake", "rockslide"],
 		exclusiveMoves: ["hyperbeam", "substitute", "substitute"],
-		tier: "OU",
+		tier: "NFE", //well its technically this now, as wrong as it looks
 	},
 	chansey: {
 		randomBattleMoves: ["icebeam", "thunderwave"],
 		essentialMove: "softboiled",
 		exclusiveMoves: ["counter", "reflect", "seismictoss", "sing", "thunderbolt", "thunderbolt", "thunderbolt"],
-		tier: "OU",
+		tier: "OU", 
 	},
 	tangela: {
 		randomBattleMoves: ["bodyslam", "sleeppowder", "swordsdance"],
 		essentialMove: "megadrain",
 		comboMoves: ["growth", "stunspore"],
-		tier: "UU",
+		tier: "LC", //lol
 	},
 	kangaskhan: {
 		randomBattleMoves: ["bodyslam", "earthquake", "hyperbeam"],
@@ -718,11 +1080,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 		randomBattleMoves: ["agility", "blizzard"],
 		essentialMove: "surf",
 		exclusiveMoves: ["doubleedge", "hydropump", "hyperbeam", "smokescreen"],
-		tier: "NU",
+		tier: "NFE", //hmm
 	},
 	goldeen: {
 		randomBattleMoves: ["agility", "blizzard", "doubleedge", "surf"],
-		tier: "LC",
+		tier: "NFE", //gyopin
 	},
 	seaking: {
 		randomBattleMoves: ["blizzard", "doubleedge", "surf"],
@@ -743,11 +1105,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 	},
 	mrmime: {
 		randomBattleMoves: ["psychic", "seismictoss", "thunderbolt", "thunderwave"],
-		tier: "NU",
+		tier: "NFE", //jesus christ how horrifying
 	},
 	scyther: {
 		randomBattleMoves: ["agility", "hyperbeam", "slash", "swordsdance"],
-		tier: "PU",
+		tier: "LC", //this may be the one gen an LC Scyther is balanced but we'll see
 	},
 	jynx: {
 		randomBattleMoves: ["blizzard", "lovelykiss", "psychic"],
@@ -756,12 +1118,12 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = { //LCs and 
 	},
 	electabuzz: {
 		randomBattleMoves: ["psychic", "seismictoss", "thunderbolt", "thunderwave"],
-		tier: "UU",
+		tier: "NFE",
 	},
 	magmar: {
 		randomBattleMoves: ["bodyslam", "confuseray", "fireblast"],
 		exclusiveMoves: ["hyperbeam", "psychic"],
-		tier: "PU",
+		tier: "NFE",
 	},
 	pinsir: {
 		randomBattleMoves: ["bodyslam", "hyperbeam", "swordsdance"],

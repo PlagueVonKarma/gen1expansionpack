@@ -145,6 +145,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: 90,
 		target: "normal",
 	},
+	brutalswing: {
+		inherit: true,
+		category: "Special",
+		type: "Dark",
+		gen: 1,
+	},
 	bubble: {
 		inherit: true,
 		secondary: {
@@ -168,6 +174,13 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		category: "Physical",
 		type: "Steel",
+		gen: 1,
+	},
+	charm: {
+		inherit: true,
+		category: "Status",
+		type: "Fairy",
+		gen: 1,
 	},
 	clamp: {
 		inherit: true,
@@ -210,32 +223,22 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			this.add('-start', source, 'typechange', source.types.join('/'), '[from] move: Conversion', '[of] ' + target);
 		},
 	},
-	counter: {
-		inherit: true,
-		desc: "Deals damage to the opposing Pokemon equal to twice the damage dealt by the last move used in the battle. This move ignores type immunity. Fails if the user moves first, or if the opposing side's last move was Counter, had 0 power, or was not Normal or Fighting type. Fails if the last move used by either side did 0 damage and was not Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform.",
-		ignoreImmunity: true,
-		willCrit: false,
-		damageCallback(pokemon, target) {
-			// Counter mechanics on gen 1 might be hard to understand.
-			// It will fail if the last move selected by the opponent has base power 0 or is not Normal or Fighting Type.
-			// If both are true, counter will deal twice the last damage dealt in battle, no matter what was the move.
-			// That means that, if opponent switches, counter will use last counter damage * 2.
-			const lastUsedMove = target.side.lastMove && this.dex.getMove(target.side.lastMove.id);
-			if (
-				lastUsedMove && lastUsedMove.basePower > 0 && ['Normal', 'Fighting'].includes(lastUsedMove.type) &&
-				this.lastDamage > 0 && !this.queue.willMove(target)
-			) {
-				return 2 * this.lastDamage;
-			}
-			this.debug("Gen 1 Counter failed due to conditions not met");
-			this.add('-fail', pokemon);
-			return false;
-		},
-	},
 	crabhammer: {
 		inherit: true,
 		category: "Special",
 		willCrit: true,
+	},
+	darkvoid: {
+		inherit: true,
+		category: "Status",
+		type: "Dark",
+		gen: 1,
+	},
+	dazzlinggleam: {
+		inherit: true,
+		category: "Special",
+		type: "Fairy",
+		gen: 1,
 	},
 	dig: {
 		inherit: true,
@@ -309,10 +312,45 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 1,
 	},
+	drainingkiss: {
+		inherit: true,
+		category: "Special",
+		type: "Fairy",
+		gen: 1,
+	},
 	explosion: {
 		inherit: true,
 		basePower: 170,
 		target: "normal",
+	},
+	fairywind: {
+		inherit: true,
+		category: "Special",
+		type: "Fairy",
+		gen: 1,
+	},
+	faketears: {
+		inherit: true,
+		category: "Status",
+		type: "Dark",
+		target: "normal",
+		gen: 1,
+		boosts: {
+			spd: -2,
+			spa: -2,
+		},
+	},
+	falsesurrender: {
+		inherit: true,
+		category: "Special",
+		type: "Dark",
+		gen: 1,
+	},
+	feintattack: {
+		inherit: true,
+		category: "Special",
+		type: "Dark",
+		gen: 1,
 	},
 	fireblast: {
 		inherit: true,
@@ -344,6 +382,19 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			}
 		},
 	},
+	/*flashcannon: {
+		inherit: true,
+		category: "Physical",
+		type: "Steel",
+		gen: 1,
+		secondary: {
+			chance: 10,
+			boosts: {
+				spa: -1,
+				spd: -1,
+			},
+		},
+	},*/
 	fly: {
 		inherit: true,
 		condition: {
@@ -443,6 +494,18 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "normal",
 		type: "Normal",
 	},
+	irondefense: {
+		inherit: true,
+		category: "Status",
+		type: "Steel",
+		gen: 1,
+	},
+	ironhead: {
+		inherit: true,
+		category: "Physical",
+		type: "Steel",
+		gen: 1,
+	},
 	jumpkick: {
 		inherit: true,
 		onMoveFail(target, source, move) {
@@ -510,6 +573,22 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "self",
 		type: "Psychic",
 	},
+	magnetbomb: {
+		inherit: true,
+		category: "Physical",
+		type: "Steel",
+		gen: 1,
+	},
+	metalsound: {
+		inherit: true,
+		category: "Status",
+		type: "Steel",
+		gen: 1,
+		boosts: {
+			spd: -2,
+			spa: -2,
+		},
+	},
 	metronome: {
 		inherit: true,
 		noMetronome: ["Metronome", "Struggle"],
@@ -549,33 +628,48 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			this.actions.useMove(foe.lastMove.id, pokemon);
 		},
 	},
+	mirrorshot: {
+		inherit: true,
+		category: "Physical",
+		type: "Steel",
+		gen: 1,
+	},
 	mist: {
 		inherit: true,
-		condition: {
-			onStart(pokemon) {
-				this.add('-start', pokemon, 'Mist');
-			},
-			onBoost(boost, target, source, effect) {
-				if (effect.effectType === 'Move' && effect.category !== 'Status') return;
-				if (source && target !== source) {
-					let showMsg = false;
-					let i: BoostID;
-					for (i in boost) {
-						if (boost[i]! < 0) {
-							delete boost[i];
-							showMsg = true;
-						}
-					}
-					if (showMsg) this.add('-activate', target, 'move: Mist');
-				}
-			},
+	},
+	naturesmadness: {
+		inherit: true,
+		category: "Special",
+		type: "Fairy",
+		gen: 1,
+	},
+	nastyplot: {
+		inherit: true,
+		boosts: {
+			spd: 2,
+			spa: 2,
 		},
+		category: "Status",
+		type: "Dark",
+		gen: 1,
 	},
 	nightshade: {
 		inherit: true,
 		category: "Physical",
 		ignoreImmunity: true,
 		basePower: 1,
+	},
+	nightslash: {
+		inherit: true,
+		category: "Special",
+		type: "Dark",
+		gen: 1,
+	},
+	playrough: {
+		inherit: true,
+		category: "Special",
+		type: "Fairy",
+		gen: 1,
 	},
 	poisonsting: {
 		inherit: true,
@@ -681,16 +775,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	},
 	rest: {
 		inherit: true,
-		onHit: function (target) {
-			// Fails if the difference between
-			// max HP and current HP is 0
-			if (target.hp >= target.maxhp) return false;
-			if (!target.setStatus('slp')) return false;
-			target.statusData.time = 2;
-			target.statusData.startTime = 2;
-			this.heal(target.maxhp); // Aeshetic only as the healing happens after you fall asleep in-game
-			this.add('-status', target, 'slp', '[from] move: Rest');
-		},
 	},
 	roar: {
 		inherit: true,
@@ -747,6 +831,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			chance: 40,
 			status: 'psn',
 		},
+	},
+	smartstrike: {
+		inherit: true,
+		category: "Physical",
+		type: "Steel",
+		gen: 1,
 	},
 	softboiled: {
 		inherit: true,
@@ -857,6 +947,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		ignoreImmunity: true,
 		basePower: 1,
+	},
+	sweetkiss: {
+		inherit: true,
+		category: "Status",
+		type: "Fairy",
+		gen: 1,
 	},
 	thunder: {
 		inherit: true,
