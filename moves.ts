@@ -228,7 +228,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		category: "Special",
 		willCrit: true,
 	},
-	darkvoid: {
+	darkvoid: { // unused
 		inherit: true,
 		category: "Status",
 		type: "Dark",
@@ -382,19 +382,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			}
 		},
 	},
-	/*flashcannon: {
-		inherit: true,
-		category: "Physical",
-		type: "Steel",
-		gen: 1,
-		secondary: {
-			chance: 10,
-			boosts: {
-				spa: -1,
-				spd: -1,
-			},
-		},
-	},*/
 	fly: {
 		inherit: true,
 		condition: {
@@ -519,6 +506,18 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		willCrit: true,
 		type: "Normal",
 	},
+	kowtowcleave: { // filled in manually
+		num: -100,
+		inherit: true,
+		basePower: 85,
+		accuracy: true,
+		pp: 10,
+		type: "Dark",
+		target: "normal",
+		secondary: null,
+		priority: 0,
+		name: "Kowtow Cleave",
+	},
 	leechseed: {
 		inherit: true,
 		onHit() {},
@@ -637,7 +636,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	mist: {
 		inherit: true,
 	},
-	naturesmadness: {
+	naturesmadness: { // unused
 		inherit: true,
 		category: "Special",
 		type: "Fairy",
@@ -791,6 +790,22 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		accuracy: 65,
 	},
+	ruination: { // unused; filled in manually
+		num: -101,
+		inherit: true,
+		ignoreImmunity: true,
+		basePower: 1,
+		accuracy: 90,
+		damageCallback(pokemon, target) {
+			return this.clampIntRange(target.getUndynamaxedHP() / 2, 1);
+		},
+		pp: 10,
+		type: "Dark",
+		target: "normal",
+		secondary: null,
+		priority: 0,
+		name: "Ruination",
+	},
 	sandattack: {
 		inherit: true,
 		ignoreImmunity: true,
@@ -805,6 +820,20 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 130,
 		target: "normal",
+	},
+	shelter: { // unused; filled in manually
+		inherit: true,
+		category: "Status",
+		type: "Steel",
+		gen: 1,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Shelter",
+		pp: 10,
+		secondary: null,
+		target: "self",
+		type: "Steel",
 	},
 	skullbash: {
 		inherit: true,
@@ -947,6 +976,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		ignoreImmunity: true,
 		basePower: 1,
+	},
+	surf: {
+		inherit: true,
+		gen: 1,
 	},
 	sweetkiss: {
 		inherit: true,
