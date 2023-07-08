@@ -899,7 +899,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 	},
 	barunda: {
 		learnset: {
-			fairywind: ["1L1"],
+			disarmingvoice: ["1L1"],
 			growl: ["1L1"],
 			drainingkiss: ["1L1"],
 			sweetkiss: ["1L25"],
@@ -1386,8 +1386,10 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			harden: ["1L1"],
 			visegrip: ["1L1"],
 			bind: ["1L21"],
+			smartstrike: ["1L25"],
 			guillotine: ["1L30"],
 			focusenergy: ["1L36"],
+			irondefense: ["1L43"],
 			slash: ["1L49"],
 			swordsdance: ["1L54", "1M"],
 			headbutt: ["2M"],
