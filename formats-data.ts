@@ -6,21 +6,21 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	///db   8D Y8b  d8 88 `88. 88   88 88      88      88.     88  .8D   88      `8b  d8' 88 `88. 88.     88  88  88 `8b  d8' 88  V888 
 	///`8888Y'  `Y88P' 88   YD YP   YP 88      88      Y88888P Y8888D'   88       `Y88P'  YP   YD Y88888P YP  YP  YP  `Y88P'  VP   V8P 
 	//LCs and NFEs are given their respective designations
-	///New Pokemon are tiered "New" as if it were a new generation. This should be positioned below OU.
+	//New Pokemon are tiered "New" as if it were a new generation. They are then moved with the next update.
 	//Old Pokemon have been retiered
-	puchikoon: {
+	kolta: {
 		tier: "LC",
 		gen: 1,
 	},
-	mikon: {
+	vulpiii: {
 		tier: "LC",
 		gen: 1,
 	},
-	konya: {
+	coinpur: {
 		tier: "LC",
 		gen: 1,
 	},
-	gyopin: {
+	orfry: {
 		tier: "LC",
 		gen: 1,
 	},
@@ -48,15 +48,15 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "UU",
 		gen: 1,
 	},
-	skimper: {
+	squeamata: {
 		tier: "LC",
 		gen: 1,
 	},
-	bawligua: {
+	ministare: {
 		tier: "NFE",
 		gen: 1,
 	},
-	cryithan: {
+	iguanarch: {
 		tier: "OU",
 		gen: 1,
 	},
@@ -68,11 +68,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "LC",
 		gen: 1,
 	},
-	gyaoon: {
+	gawarhed: {
 		tier: "UU",
 		gen: 1,
 	},
-	omega: {
+	omegadge: {
 		tier: "OU",
 		gen: 1,
 	},
@@ -80,7 +80,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "OU",
 		gen: 1,
 	},
-	jagg: {
+	sharpoon: {
 		tier: "UU",
 		gen: 1,
 	},
@@ -92,11 +92,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "UU",
 		gen: 1,
 	},
-	deer: {
+	ramoose: {
 		tier: "OU",
 		gen: 1,
 	},
-	barunda: {
+	balumba: {
 		tier: "UU",
 		gen: 1,
 	},
@@ -108,7 +108,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "UU",
 		gen: 1,
 	},
-	cactus: {
+	cactormus: {
 		tier: "UU",
 		gen: 1,
 	},
@@ -124,7 +124,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "UU",
 		gen: 1,
 	},
-	crocky: {
+	gavillain: {
 		tier: "UU",
 		gen: 1,
 	},
@@ -144,39 +144,39 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "UU",
 		gen: 1,
 	},
-	purakkusu: { //1.1 SW97 additions begin here
+	tricules: { //1.1 SW97 additions begin here
 		tier: "UU",
 		gen: 1,
 	},
-	madaamu: {
+	luxwan: {
 		tier: "OU",
 		gen: 1,
 	},
-	tsubomitto: {
+	bellignan: {
 		tier: "UU",
 		gen: 1,
 	},
-	animon: {
+	mimmeo: {
 		tier: "UU",
 		gen: 1,
 	},
-	monja: {
+	burgela: {
 		tier: "LC",
 		gen: 1,
 	},
-	para: {
+	paraspor: {
 		tier: "LC",
 		gen: 1,
 	},
-	hinaazu: {
+	dodaerie: {
 		tier: "LC",
 		gen: 1,
 	},
-	pudi: {
+	pupperon: {
 		tier: "LC",
 		gen: 1,
 	},
-	betobebii: {
+	smujj: {
 		tier: "LC",
 		gen: 1,
 	},
@@ -341,11 +341,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		gen: 1,
 	},
 	melmetal: {
-		tier: "New",
+		tier: "OU",
 		gen: 1,
 	},
 	annihilape: {
-		tier: "New",
+		tier: "OU",
 		gen: 1,
 	},
 	wiglett: {
@@ -353,7 +353,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		gen: 1,
 	},
 	wugtrio: {
-		tier: "New",
+		tier: "UU",
 		gen: 1,
 	},
 	toedscool: {
@@ -369,7 +369,23 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		gen: 1,
 	},
 	sandyshocks: {
-		tier: "New",
+		tier: "OU",
+		gen: 1,
+	},
+	gentlarva: {
+		tier: "LC",
+		gen: 1,
+	},
+	pupal: {
+		tier: "NFE",
+		gen: 1,
+	},
+	carapthor: { // ogasawara name
+		tier: "UU",
+		gen: 1,
+	},
+	disturban: {
+		tier: "UU",
 		gen: 1,
 	},
 	///d8888b. d88888b  d888b  d888888b  .d88b.  d8b   db  .d8b.  db        db    db  .d8b.  d8888b. d888888b  .d8b.  d8b   db d888888b .d8888. 
@@ -511,15 +527,15 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		gen: 1,
 	},
 	taurospaldeacombat: {
-		tier: "New",
+		tier: "UU",
 		gen: 1,
 	},
 	taurospaldeablaze: {
-		tier: "New",
+		tier: "UU",
 		gen: 1,
 	},
 	taurospaldeaaqua: {
-		tier: "New",
+		tier: "UU",
 		gen: 1,
 	},
 	/// .o88b. db       .d8b.  .d8888. .d8888. d888888b  .o88b.   d8888b.  .d88b.  db   dD d88888b d8888b. d88888b db    db 
@@ -742,7 +758,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	golbat: {
 		randomBattleMoves: ["confuseray", "doubleedge", "hyperbeam", "megadrain"],
-		tier: "PU",
+		tier: "NFE",
 	},
 	oddish: {
 		randomBattleMoves: ["doubleedge", "sleeppowder"],
@@ -765,7 +781,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "megadrain"],
 		essentialMove: "spore",
 		exclusiveMoves: ["growth", "slash", "stunspore", "stunspore", "swordsdance"],
-		tier: "LC",
+		tier: "NFE",
 	},
 	parasect: {
 		randomBattleMoves: ["bodyslam", "megadrain"],
@@ -797,7 +813,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "bubblebeam"],
 		essentialMove: "slash",
 		exclusiveMoves: ["thunder", "thunderbolt"],
-		tier: "LC",
+		tier: "NFE",
 	},
 	persian: {
 		randomBattleMoves: ["bodyslam", "bubblebeam"],
@@ -825,11 +841,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	primeape: {
 		randomBattleMoves: ["bodyslam", "rockslide", "submission"],
 		exclusiveMoves: ["counter", "hyperbeam", "hyperbeam"],
-		tier: "PU",
+		tier: "NFE",
 	},
 	growlithe: {
 		randomBattleMoves: ["bodyslam", "fireblast", "flamethrower", "reflect"],
-		tier: "LC",
+		tier: "NFE",
 	},
 	arcanine: {
 		randomBattleMoves: ["bodyslam", "fireblast", "hyperbeam"],
@@ -846,7 +862,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["blizzard", "surf"],
 		essentialMove: "amnesia",
 		exclusiveMoves: ["counter", "hypnosis", "hypnosis", "psychic"],
-		tier: "NU",
+		tier: "NFE",
 	},
 	poliwrath: {
 		randomBattleMoves: ["blizzard", "bodyslam", "earthquake", "submission"],
@@ -863,7 +879,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	kadabra: {
 		randomBattleMoves: ["psychic", "recover", "thunderwave"],
 		exclusiveMoves: ["counter", "reflect", "reflect", "seismictoss", "seismictoss"],
-		tier: "UU",
+		tier: "NFE",
 	},
 	alakazam: {
 		randomBattleMoves: ["psychic", "recover", "thunderwave"],
@@ -927,7 +943,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	ponyta: {
 		randomBattleMoves: ["agility", "bodyslam", "fireblast", "reflect"],
-		tier: "LC",
+		tier: "NFE",
 	},
 	rapidash: {
 		randomBattleMoves: ["agility", "bodyslam", "fireblast", "hyperbeam"],
@@ -958,11 +974,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	farfetchd: {
 		randomBattleMoves: ["agility", "bodyslam", "swordsdance"],
 		essentialMove: "slash",
-		tier: "PU",
+		tier: "LC",
 	},
 	doduo: {
 		randomBattleMoves: ["agility", "bodyslam", "doubleedge", "drillpeck"],
-		tier: "LC",
+		tier: "NFE",
 	},
 	dodrio: {
 		randomBattleMoves: ["agility", "bodyslam", "drillpeck", "hyperbeam"],
@@ -982,7 +998,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "sludge"],
 		essentialMove: "explosion",
 		exclusiveMoves: ["fireblast", "megadrain", "megadrain", "screech"],
-		tier: "LC",
+		tier: "NFE",
 	},
 	muk: {
 		randomBattleMoves: ["bodyslam", "sludge"],
@@ -1015,13 +1031,13 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["explosion", "megadrain", "nightshade", "psychic"],
 		essentialMove: "thunderbolt",
 		exclusiveMoves: ["confuseray", "hypnosis", "hypnosis"],
-		tier: "UU",
+		tier: "NFE",
 	},
 	haunterghost: {
 		randomBattleMoves: ["explosion", "megadrain", "nightshade", "psychic"],
 		essentialMove: "thunderbolt",
 		exclusiveMoves: ["confuseray", "hypnosis", "hypnosis"],
-		tier: "UU",
+		tier: "NFE",
 	},
 	gengar: {
 		randomBattleMoves: ["explosion", "megadrain", "nightshade", "psychic"],
@@ -1031,7 +1047,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	onix: {
 		randomBattleMoves: ["bodyslam", "earthquake", "explosion", "rockslide"],
-		tier: "PU",
+		tier: "LC",
 	},
 	drowzee: {
 		randomBattleMoves: ["hypnosis", "psychic", "thunderwave"],
@@ -1131,7 +1147,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "sleeppowder", "swordsdance"],
 		essentialMove: "megadrain",
 		comboMoves: ["growth", "stunspore"],
-		tier: "LC", //lol
+		tier: "NFE", //lol
 	},
 	kangaskhan: {
 		randomBattleMoves: ["bodyslam", "earthquake", "hyperbeam"],
@@ -1173,7 +1189,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	mrmime: {
 		randomBattleMoves: ["psychic", "seismictoss", "thunderbolt", "thunderwave"],
-		tier: "NFE", //jesus christ how horrifying
+		tier: "NU",
 	},
 	scyther: {
 		randomBattleMoves: ["agility", "hyperbeam", "slash", "swordsdance"],
@@ -1196,7 +1212,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	pinsir: {
 		randomBattleMoves: ["bodyslam", "hyperbeam", "swordsdance"],
 		exclusiveMoves: ["seismictoss", "submission", "submission"],
-		tier: "PU",
+		tier: "LC",
 	},
 	tauros: {
 		randomBattleMoves: ["bodyslam", "earthquake", "hyperbeam"],
@@ -1220,7 +1236,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	ditto: {
 		randomBattleMoves: ["transform"],
-		tier: "PU",
+		tier: "LC",
 	},
 	eevee: {
 		randomBattleMoves: ["doubleedge", "quickattack", "reflect"],
@@ -1237,7 +1253,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	jolteon: {
 		randomBattleMoves: ["bodyslam", "thunderbolt", "thunderwave"],
 		exclusiveMoves: ["agility", "agility", "doublekick", "pinmissile", "pinmissile"],
-		tier: "OU",
+		tier: "UU",
 	},
 	flareon: {
 		randomBattleMoves: ["bodyslam", "fireblast", "hyperbeam", "quickattack"],
@@ -1247,7 +1263,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleMoves: ["blizzard", "thunderwave"],
 		essentialMove: "recover",
 		exclusiveMoves: ["doubleedge", "psychic", "thunderbolt", "triattack"],
-		tier: "NU",
+		tier: "LC",
 	},
 	omanyte: {
 		randomBattleMoves: ["bodyslam", "hydropump", "rest", "surf"],
